@@ -5,5 +5,5 @@ phases:
       - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS 
   build:
     commands:
-      - dotnet restore Echo/Echo.sln
-      - dotnet build Echo/Echo.sln
+      - dotnet restore Echo.sln
+      - dotnet build Echo.sln

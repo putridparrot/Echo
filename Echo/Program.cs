@@ -13,10 +13,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/echo", (string text) =>
-    {
-        return $"Echo: {text}";
-    })
+app.MapGet("/echo", (string text) => $"Echo: {text}")
 .WithName("Echo")
 .WithOpenApi();
 
